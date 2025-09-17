@@ -1,82 +1,34 @@
-# 📱 Loob Job System
+# Loob Job System
 
-> **A modern, full-stack job recruitment platform designed for the Malaysian market**
+A comprehensive job recruitment platform I built using Flutter and Laravel, designed specifically for the Loob Holdings. This is a complete mobile-first recruitment system that handles everything from job listings to application tracking and recruiter management.
 
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
-[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+## Build Performance Note
 
-## 🌟 Overview
+**Initial iOS Build Time:** ~51 minutes (3069 seconds) on iPhone 16 simulator  
+**Platform:** macOS Sonoma with Apple Silicon  
 
-Loob is a comprehensive job recruitment system featuring a **Flutter mobile application** and **Laravel API backend**. Built specifically for the Malaysian job market, it provides a seamless experience for job seekers to browse opportunities and apply for positions, while offering recruiters powerful tools to manage applications.
-
-### ✨ Key Features
-
-#### 📱 **Mobile App (Flutter)**
-- **Job Discovery**: Browse and search through available positions
-- **Detailed Job View**: Company information, requirements, and application process
-- **Easy Applications**: Streamlined application form with validation
-- **Application Tracking**: Real-time status updates (pending → reviewed → accepted/rejected)
-- **User Profiles**: Personalized user experience with authentication
-- **Responsive Design**: Beautiful, modern UI optimized for mobile devices
-
-#### 🖥️ **Backend API (Laravel)**
-- **RESTful API**: Clean, well-documented endpoints
-- **User Authentication**: Secure login/registration with Laravel Sanctum
-- **Role-based Access**: Separate interfaces for job seekers and recruiters
-- **Email Notifications**: Automated application confirmations
-- **Data Management**: Comprehensive job listings and application management
-- **Malaysian Context**: Realistic test data reflecting local job market
-
-### 🛠️ Tech Stack
-
-| Component | Technology | Purpose |
-|-----------|------------|---------||
-| **Mobile App** | Flutter 3.24+ | Cross-platform mobile development |
-| **Backend API** | Laravel 11 | RESTful API and business logic |
-| **Database** | SQLite | Lightweight, portable data storage |
-| **Authentication** | Laravel Sanctum | Secure API token authentication |
-| **State Management** | Provider | Reactive state management for Flutter |
-| **Networking** | HTTP Package | API communication |
-
-## 🚀 Quick Start
-
-### Prerequisites
-- **Flutter SDK**: 3.24 or higher
-- **PHP**: 8.2 or higher  
-- **Composer**: Latest version
-- **iOS Simulator** or **Android Emulator** for testing
-
-### 🏃‍♂️ **One-Command Setup**
-```bash
-git clone https://github.com/yourusername/loob-job-system.git
-cd loob-job-system
-chmod +x quick-start.sh
-./quick-start.sh
-```
-
-### 📋 **Manual Setup**
-
-#### Backend Setup (Laravel API)
-```bash
-cd laravel-backend/loob_recruitment
-composer install
-cp .env.example .env
-php artisan key:generate
+## Quick Start Guide
+### Backend Setup (Laravel API)
+   ```bash
+   cd laravel-backend/loob_recruitment
+   composer install
+   cp .env.example .env
+   php artisan key:generate
 touch database/database.sqlite
-php artisan migrate --seed
+   php artisan migrate --seed
 php artisan serve --port=8000
-```
+   ```
 
-#### Mobile App Setup (Flutter)
-```bash
-cd flutter-app/loob_app
-flutter pub get
-flutter run
-```
+The Laravel server will run on `http://localhost:8000`. The port specification is important for the Flutter app to connect properly.
 
-> 🔗 The Laravel server runs on `http://localhost:8000` and the Flutter app automatically connects to this endpoint.
+### Mobile App Setup (Flutter)
+   ```bash
+   cd flutter-app/loob_app
+   flutter pub get
+   flutter run
+   ```
+
+The app automatically connects to `http://localhost:8000` for API calls.
 
 ### Test Data Available
 
