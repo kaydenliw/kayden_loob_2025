@@ -1,0 +1,75 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Laravel Backend
+laravel-backend/loob_recruitment/vendor/
+laravel-backend/loob_recruitment/node_modules/
+laravel-backend/loob_recruitment/.env
+laravel-backend/loob_recruitment/.env.backup
+laravel-backend/loob_recruitment/.phpunit.result.cache
+laravel-backend/loob_recruitment/Homestead.json
+laravel-backend/loob_recruitment/Homestead.yaml
+laravel-backend/loob_recruitment/npm-debug.log
+laravel-backend/loob_recruitment/yarn-error.log
+laravel-backend/loob_recruitment/storage/app/public/*
+laravel-backend/loob_recruitment/storage/framework/cache/*
+laravel-backend/loob_recruitment/storage/framework/sessions/*
+laravel-backend/loob_recruitment/storage/framework/testing/*
+laravel-backend/loob_recruitment/storage/framework/views/*
+laravel-backend/loob_recruitment/storage/logs/*
+laravel-backend/loob_recruitment/bootstrap/cache/*
+laravel-backend/loob_recruitment/database/database.sqlite
+laravel-backend/loob_recruitment/public/hot
+laravel-backend/loob_recruitment/public/storage
+
+# Flutter App
+flutter-app/loob_app/.dart_tool/
+flutter-app/loob_app/.flutter-plugins
+flutter-app/loob_app/.flutter-plugins-dependencies
+flutter-app/loob_app/.packages
+flutter-app/loob_app/.pub-cache/
+flutter-app/loob_app/.pub/
+flutter-app/loob_app/build/
+flutter-app/loob_app/ios/Pods/
+flutter-app/loob_app/ios/.symlinks/
+flutter-app/loob_app/ios/Flutter/Flutter.framework
+flutter-app/loob_app/ios/Flutter/Flutter.podspec
+flutter-app/loob_app/ios/Runner.xcworkspace/
+flutter-app/loob_app/android/.gradle/
+flutter-app/loob_app/android/.idea/
+flutter-app/loob_app/android/local.properties
+flutter-app/loob_app/android/app/src/main/java/io/flutter/plugins/
+flutter-app/loob_app/android/gradle.properties
+flutter-app/loob_app/android/key.properties
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.config.dart
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local configuration files
+config.local.json
+settings.local.json
